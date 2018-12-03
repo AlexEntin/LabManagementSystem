@@ -23,7 +23,7 @@ spring:
 
   mail:
     host: mailsrv.mobileye.com
-    port: 995
+    port: 25
     username: alexandere
     password: wsgtDuf5NG92w
     properties:
