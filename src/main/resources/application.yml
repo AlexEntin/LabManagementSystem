@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:3306/lab?serverTimezone=GMT&useSSL=false
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+  thymeleaf:
+    cache: false
+    check-template: true
+    check-template-location: true
+    enabled: true
+    encoding: UTF-8
+
+      # excluded-view-names:
+      # mode: HTML5
+      # prefix: /templates/
+      # suffix: .html
+      # template-resolver-order:
+      # view-names:
+    servlet:
+      content-type: text/html
+
+  mail:
+    host: mailsrv.mobileye.com
+    port: 995
+    username: alexandere
+    password: wsgtDuf5NG92w
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+

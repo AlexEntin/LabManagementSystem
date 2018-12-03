@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="../jquery.paginate.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+    Shalom!
+
+
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: url,
+            data: data,
+            success: success,
+            dataType: dataType
+        });
+        $('table').paginate({
+            'maxButtons': 5,
+            'elemsPerPage': 5,
+            'previousText': '&laquo;',
+            'nextText': '&raquo;',
+            'previousSetText': '&hellip;',
+            'nextSetText': '&hellip;',
+            'showAllText': '&dArr;',
+            'disabledClass': prefix + 'Disabled',
+            'activeClass': prefix + 'Active',
+            'containerClass': prefix + 'Container',
+            'listClass': prefix + 'List',
+            'showAllListClass': prefix + 'ShowAllList',
+            'previousClass': prefix + 'Previous',
+            'nextClass': prefix + 'Next',
+            'previousSetClass': prefix + 'PreviousSet',
+            'nextSetClass': prefix + 'NextSet',
+            'showAllClass': prefix + 'ShowAll',
+            'pageClass': prefix + 'Page',
+            'anchorClass': prefix + 'Anchor',
+        });
+    });
+</script>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="jquery.paginate.js"></script>
